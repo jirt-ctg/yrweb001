@@ -1,0 +1,24 @@
+server:
+    port: 8778
+
+debug: true
+
+spring:
+    cloud:
+        zookeeper:
+            connectString: 127.0.0.1:2181
+            enabled: false
+    sleuth:
+        enabled: false
+
+swagger:
+    basePackage: com.yrtest.yrweb001.controller
+    title: ctg-yrtest-yrweb001 RESTful APIs
+    description: ctg-yrtest-yrweb001 RESTful API
+    version: 1.0.0-SNAPSHOT
+    openApi:
+        group: OpenApi
+        basePackage: com.yrtest.yrweb001.controller
+        title: actg-yrtest-yrweb001 Open APIs
+        description: ctg-yrtest-yrweb001 Open API
+        version: 1.0.0-SNAPSHOT
